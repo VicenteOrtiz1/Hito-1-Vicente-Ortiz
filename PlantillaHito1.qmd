@@ -1,0 +1,104 @@
+---
+title: "Análisis de la Opción NVDA Sep 2024 55"
+author: "Vicente Ortiz"
+date: "27 de Septiembre de 2024"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 2
+fontsize: 12pt
+geometry: margin=1in
+---
+
+# Análisis de la Opción NVDA Sep 2024 55
+
+**Gestión Financiera**
+
+**Hito 1**
+
+**Profesor: Sebastián Cea**
+
+**Integrantes: Vicente Ortiz**
+
+**Fecha: 27 de Septiembre de 2024**
+
+---
+
+# Índice
+1. [Sector/Temática](#sector-tematica)
+2. [Motivación](#motivacion)
+3. [Contexto](#contexto)
+4. [Derivados](#derivados)
+5. [Resultados y conclusiones](#resultados-y-conclusiones)
+6. [Bibliografía](#bibliografia)
+
+---
+
+# 1. Sector/Temática {#sector-tematica}
+
+NVIDIA Corporation es una empresa que opera en el sector de semiconductores y tecnología. Específicamente, es reconocida por su producción de unidades de procesamiento gráfico (GPUs) utilizadas en videojuegos, computación en la nube, inteligencia artificial y minería de criptomonedas. Por lo tanto, sabemos que la opción NVDA Sep 2024 55.000 call (NVDA240913C00055000) que estudiamos pertenece al sector de Tecnología - Semiconductores.
+
+El sector de semiconductores es clave para el desarrollo tecnológico global, dado que las GPUs desempeñan un papel central en el procesamiento paralelo para aplicaciones como la inteligencia artificial (AI). Diversos estudios han abordado la importancia de los semiconductores en la cuarta revolución industrial y su impacto en la economía mundial (Kim et al., 2021). Además, investigaciones como las de Chen y Tao (2020) destacan el valor creciente del sector a medida que el aprendizaje profundo y la automatización se vuelven más prevalentes en diversas industrias.
+
+---
+
+# 2. Motivación {#motivacion}
+
+Mi motivación para estudiar una opción de compra como NVDA Sep 2024 55.000 call es el gran impacto que está tomando NVIDIA en sectores emergentes como la inteligencia artificial y los juegos online.
+
+La empresa ha establecido una posición clave gracias a su liderazgo en el desarrollo de GPUs de alto rendimiento, que son esenciales para procesar los grandes volúmenes de datos requeridos por la IA. En cuanto al mercado de juegos en línea, este ha experimentado un crecimiento significativo, impulsado por la capacidad de las GPUs para ofrecer experiencias de juego de alta calidad de manera remota. Esto, junto con el crecimiento de la tecnología blockchain, donde las GPUs juegan un papel fundamental en la minería de criptomonedas, ha posicionado a NVIDIA como un jugador central en la transformación de varias industrias tecnológicas.
+
+Además, el sector tecnológico, y en particular la industria de los semiconductores, está caracterizado por una gran volatilidad. Esto se debe a factores como el ritmo acelerado de la innovación, la competencia intensa y la dependencia de la demanda de mercados específicos. Esta volatilidad añade complejidad y atractivo a las opciones sobre acciones, ya que permite a los inversionistas capitalizar sobre movimientos bruscos de precios. En el caso de NVIDIA, su exposición a sectores tan dinámicos y de alto crecimiento amplifica estas oportunidades de inversión, por lo que se hace muy interesante estudiarlas a profundidad.
+
+---
+
+# 3. Contexto {#contexto}
+
+Para analizar de mejor manera nuestra opción de compra NVDA Sep 2024 55.000 call debemos analizar tres variables/activos que son claves para entender su relación con el sector de semiconductores.
+
+1. **Precio de la acción de NVIDIA (NVDA):**
+   Los últimos años el precio de las acciones de NVIDIA ha sido altamente volátil, pero se puede ver un crecimiento sostenido, debido a su posición de liderazgo en sectores como la inteligencia artificial, automóviles autónomos y el metaverso gracias a la implementación de sus GPUs en estos sectores. Estadísticamente, el precio de las acciones de NVIDIA presenta un alto rendimiento con desviación estándar significativa, lo que indica grandes fluctuaciones en un corto período de tiempo, lo que es ideal para inversiones en opciones.
+
+   Además, sabemos que la relación entre el precio de la acción y la opción call es directa. Es decir, que si el precio de la acción de NVIDIA continúa subiendo, como se espera por el crecimiento de estos sectores, la opción se volverá aún más valiosa, lo que representa una oportunidad de beneficio para los inversionistas.
+
+2. **Índice de Semiconductores de Filadelfia (SOX):**
+   El SOX es un índice de referencia que agrupa las principales empresas del sector de semiconductores, incluyendo a NVIDIA. Este índice muestra cómo se comporta el mercado de semiconductores en general, que es altamente cíclico y dependiente de la innovación tecnológica.
+
+   Durante los años, NVIDIA ha tenido una alta correlación con el SOX, mostrando que cuando el índice sube, es probable que las acciones de NVIDIA también lo hagan. Sin embargo, al tener NVIDIA un enfoque en mercados con altos márgenes de crecimiento como la IA, a menudo puede superar el rendimiento del índice en épocas de innovación acelerada.
+
+3. **Índice de Volatilidad del Mercado (VIX):**
+   El VIX, conocido como el "índice del miedo", mide la volatilidad esperada en el mercado de opciones del S&P 500. Aunque NVIDIA no es parte directa de este índice, la relación entre el VIX y las opciones de tecnología es clave. Un aumento en el VIX refleja una mayor volatilidad en el mercado en general, lo que puede llevar a una mayor demanda de opciones como refugio ante la incertidumbre.
+
+---
+
+# 4. Derivados {#derivados}
+
+En este trabajo, para estudiar nuestra opción de compra NVDA Sep 2024 55.000 call (NVDA240913C00055000), se utilizó el Modelo Black-Scholes, el cual valora opciones tomando en cuenta factores como el precio actual de la acción, el precio de ejercicio, la volatilidad de la acción, el tiempo hasta el vencimiento y la tasa de interés libre de riesgo.
+
+Para implementar este modelo se utilizó el archivo de código **ArbitrajeBlackScholes.ipynb** en Google Colab bajo un enfoque de un periodo. También, se consideró el rendimiento del bono del Tesoro de EEUU a 4 semanas como activo libre de riesgo, cuyo valor actual es de 4.69% al 12 de septiembre de 2024.
+
+Los parámetros a considerar para nuestro análisis son los siguientes:
+
+- **Último precio de la opción (q3):** $55.80
+- **Precio del ejercicio (k):** $55
+- **Precio actual del bono (b):** $996.35
+- **Rendimiento al vencimiento (r):** 4.69%
+- **Precio Inicial del Activo Subyacente (S0):** $116.91
+- **Factor de crecimiento (u):** 1.013
+- **Factor de decrecimiento (d):** 0.987
+
+---
+
+# 5. Resultados y conclusiones {#resultados-y-conclusiones}
+
+En este análisis de la opción NVDA Sep 2024 55.000 call, se utilizó el modelo binomial de un solo periodo y se aproximó al modelo de Black-Scholes para evaluar las posibles fluctuaciones en el precio de la acción de NVIDIA. El estudio incluyó tanto los escenarios de aumento como de disminución del precio del activo subyacente, teniendo en cuenta la relación directa entre el comportamiento de la acción y el valor de la opción.
+
+Los resultados obtenidos muestran que la volatilidad del precio de las acciones de NVIDIA, junto con la evolución del sector de semiconductores, afecta significativamente el valor de las opciones. Al incorporar una tasa libre de riesgo basada en el rendimiento de los bonos del Tesoro de EE. UU. a corto plazo, se reflejan las condiciones del mercado.
+
+---
+
+# 6. Bibliografía {#bibliografia}
+- Federal Reserve Bank of St. Louis. (n.d.). 4-week Treasury bill: Secondary market rate [DTB4WK]. FRED. Retrieved September 22, 2024, from https://fred.stlouisfed.org/series/DTB4WK
+- Yahoo Finance. (n.d.). NVIDIA Corporation (NVDA) options. Retrieved September 22, 2024, from https://finance.yahoo.com/quote/NVDA/options/
+- Morningstar. (n.d.). NVIDIA Corporation (NVDA) quote. Retrieved September 22, 2024, from https://www.morningstar.com/stocks/xnas/nvda/quote
+- U.S. Department of the Treasury. (n.d.). TreasuryDirect. Retrieved September 22, 2024, from https://www.treasurydirect.gov/
